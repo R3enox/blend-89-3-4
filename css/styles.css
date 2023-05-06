@@ -178,8 +178,11 @@ body {
     flex: space-around;
 }
 
-.favorite-container-left-side {
-    margin-right: 172px;
+.favorite-container-right-side {
+    margin-left: 172px;
+    border: 14px solid var(--accent-color-yellow);
+    border-radius: 300px;
+    padding: 17px;
 }
 
 .section-description-favorite {
