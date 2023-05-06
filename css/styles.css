@@ -402,7 +402,7 @@ margin-bottom: 58px;
     display: flex;
 }
 
-.footer-item-righ {
+.footer-item-right {
     margin-left: auto;
     font-weight: 400;
     font-size: 12px;
@@ -428,7 +428,12 @@ margin-bottom: 58px;
     margin-bottom: 24px;
 }
 
-
+.current-link-footer {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+text-decoration-line: underline;
+color: var(--secondary-color);}
 
 /* ----------------- /FOOTER ----------------- */
 
