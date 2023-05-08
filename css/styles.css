@@ -358,13 +358,9 @@ margin-bottom: 58px;
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 }
 
-.footer-container {
-    display: flex;
-    align-items: center;
-}
-
 .footer-big {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer-list {
