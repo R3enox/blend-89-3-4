@@ -280,22 +280,15 @@ margin-bottom: 58px;
     line-height: 1.16;
 }
 
-.customers-item-container-left {
-    display: flex;
-}
-
-.customers-item-content-left {
-    margin-left: 14px;
-    margin-right: 16px;
-}
-
+.customers-item-container-left,
 .customers-item-container-right {
     display: flex;
-}
-
-.customers-item-content-right {
     margin-left: 14px;
     margin-right: 16px;
+}
+
+.customers-item-text {
+    margin-left: 16px;
 }
 
 .suptitle-mb {
