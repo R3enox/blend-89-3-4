@@ -118,7 +118,7 @@ body {
     font-weight: 700;
     font-size: 48px;
     line-height: 1.2;
-    margin-top: 177px;
+    margin-top: 150px;
     margin-bottom: 28px;
 }
 
@@ -173,7 +173,7 @@ body {
 /* ----------------- /HEADER ----------------- */
 /* ----------------- FAVORITE ----------------- */
 .favorite {
-    margin-top: 54px;
+    padding: 27px 0;
 }
 
 .container-space-around {
@@ -200,6 +200,10 @@ body {
 
 .offerings-container-left-side {
     margin-right: 126px;
+}
+
+.offerings-container-right-side {
+    margin-top: 26px;
 }
 
 .section-description-offerings {
@@ -412,7 +416,7 @@ margin-bottom: 58px;
     font-size: 12px;
     line-height: 1.5;
     color: #505050;
-    border: 0.854167px solid #FFE550;
+    border: 0.854167px solid rgb(255, 229, 82);
     border-radius: 30px;
     margin-bottom: 24px;
 }
