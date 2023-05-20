@@ -295,7 +295,7 @@ body {
 }
 
 .customers-list-container {
-    background-image: url(./images/customers-say/Stars.jpg);
+    background-image: url(../images/customers-say/Stars.jpg);
     background-repeat: no-repeat;
     background-size: 101px 16px;
     background-position: 14px 14px;
