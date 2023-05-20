@@ -57,36 +57,23 @@ body {
 
 /* ----------------- COMPONENTS ----------------- */
 .modal-open-btn {
+    padding: 6px 18px;
     min-width: 98px;
     height: 32px;
+    font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 1.5;
-    text-align: center;
-    border-radius: 30px;
-    font-family: var(--main-font-family);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-open-btn-theme-green {
-    border: none;
     background-color: var(--secondary-color);
+    border: 2px solid var(--tertiary-colorcolor);
+    border-radius: 30px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-open-btn:hover,
 .modal-open-btn:focus {
     background-color: var(--accent-color-yellow);
-}
-
-.modal-open-btn-them-light {
-    background: #FFFFFF;
-    border: 2px solid #7EB101;
-    border-radius: 30px;
-}
-
-.modal-open-btn-them-light:hover,
-.modal-open-btn-them-light:focus {
-    background-color: var(--secondary-color);
 }
 
 .menu-link,
@@ -258,6 +245,25 @@ body {
     fill: var(--tertiary-color);
 }
 
+.offerings-modal-open-btn {
+    min-width: 106px;
+    height: 40px;
+    padding: 10px 22px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    border: 2px solid var(--tertiary-color);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offerings-modal-open-btn:hover,
+.offerings-modal-open-btn:focus {
+    background-color: var(--secondary-color);
+}
 /* ----------------- /OFFERINGS ----------------- */
 /* ----------------- OUR-FAVORITES ----------------- */
 .title-center {
@@ -367,24 +373,24 @@ body {
     border-radius: 30px;
 }
 
-.modal-open-btn-sub {
+.modal-open-btn-sub-green {
+    padding: 11px 22px;
     min-width: 103px;
     height: 42px;
-    padding: 6px 18px;
     font-weight: 500;
     font-size: 13px;
     line-height: 1.5;
     text-align: center;
+    border: none;
     border-radius: 30px;
     font-family: var(--main-font-family);
-    background-color: #FFFFFF;
-    border: 1px solid var(--tertiary-color);
+    background-color: var(--secondary-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-open-btn-sub:hover,
-.modal-open-btn-sub:focus {
-    border-color: var(--accent-color-yellow);
+.modal-open-btn-sub-green:hover,
+.modal-open-btn-sub-green:focus {
+    background-color: var(--accent-color-yellow);
 }
 
 
@@ -468,6 +474,26 @@ body {
     border: 0.854167px solid rgb(255, 229, 82);
     border-radius: 30px;
     margin-bottom: 24px;
+}
+
+.modal-open-btn-sub {
+    min-width: 103px;
+    height: 42px;
+    padding: 11px 22px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    border: 2px solid var(--tertiary-color);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-open-btn-sub:hover,
+.modal-open-btn-sub:focus {
+    border: 2px solid var(--accent-color-yellow);
 }
 
 .current-link-footer {
