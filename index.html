@@ -48,7 +48,7 @@
             </li>
           </ul>
         </nav>
-        <button class="modal-open-btn modal-open-btn-theme-green" type="button">Order Now</button>
+        <button class="modal-open-btn modal-open-btn-theme-green" type="button" data-modal-open>Order Now</button>
       </div>
     </header>
     <!-- /HEADER-->
@@ -63,7 +63,7 @@
               eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
               nulla, ut commodo diam libero vitae erat.
             </p>
-            <button class="modal-open-btn modal-open-btn-theme-green" type="button">
+            <button class="modal-open-btn modal-open-btn-theme-green" type="button" data-modal-open>
               Order Now
             </button>
           </div>
@@ -124,7 +124,7 @@
                   </p>
               </li>
             </ul>
-            <button class="modal-open-btn modal-open-btn-them-light" type="button">
+            <button class="modal-open-btn modal-open-btn-them-light" type="button" data-modal-open>
               Order Now
             </button>
           </div>
@@ -311,7 +311,7 @@
             <ul class="footer-list-third list">
               <li class="footer-item-third footer-item-display">
                 <p class="section-description-footer email-style">Enter your email</p>
-                <button class="modal-open-btn-sub modal-open-btn-them-light" type="button">
+                <button class="modal-open-btn-sub" type="button">
                   Subscribe
                 </button>
               </li>
@@ -341,5 +341,18 @@
       </div>
     </footer>
     <!-- /FOOTER-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="11" height="11" aria-label="Button Close">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="title-modal">Order Form</h2>
+        <button class="modal-send-btn">Send</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
