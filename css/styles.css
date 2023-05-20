@@ -4,6 +4,7 @@
 --secondary-color: #bbf330;
 --accent-color-yellow: #ffe450;
 --background-color: #fefefe;
+--tertiary-color: #7EB101;
 }
 
 .list {
@@ -178,7 +179,7 @@ body {
 
 .container-space-around {
     display: flex;
-    flex: space-around;
+    /* flex: space-around; */
 }
 
 .favorite-container-right-side {
@@ -202,20 +203,33 @@ body {
     margin-right: 126px;
 }
 
+.offerings-img-apple {
+    padding: 0 24px 24px;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
 .offerings-container-right-side {
     margin-top: 26px;
 }
 
 .section-description-offerings {
-margin-bottom: 40px;
+    margin-bottom: 40px;
+    width: 500px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .section-description-offerings-width {
-margin-bottom: 40px;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.5;
-margin-bottom: 58px;
+    width: 253px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 58px;
 }
 
 .offerings-width {
@@ -229,8 +243,19 @@ margin-bottom: 58px;
 
 }
 
-.offerings-img {
+.offerings-icon-wrapper {
     margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.offerings-icon {
+    fill: var(--tertiary-color);
 }
 
 /* ----------------- /OFFERINGS ----------------- */
@@ -270,6 +295,10 @@ margin-bottom: 58px;
 }
 
 .customers-list-container {
+    background-image: url(./images/customers-say/Stars.jpg);
+    background-repeat: no-repeat;
+    background-size: 101px 16px;
+    background-position: 14px 14px;
     margin-top: 32px;
     background-color: var(--background-color);
     max-width: 501px;
@@ -293,6 +322,8 @@ margin-bottom: 58px;
 
 .customers-item-text {
     margin-left: 16px;
+    padding-right: 14px;
+    border-right: 1px solid var(--tertiary-color);
 }
 
 .suptitle-mb {
@@ -353,6 +384,10 @@ margin-bottom: 58px;
 /* ----------------- FOOTER ----------------- */
 .footer {
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+    background-image: url(../images/footer/fruits.jpg);
+    background-repeat: no-repeat;
+    background-size: 1380;
+    background-position: 50% 100%;
 }
 
 .footer-big {
@@ -385,6 +420,12 @@ margin-bottom: 58px;
 
 .footer-container-second {
     display: flex;
+}
+
+.footer-container-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-container-right {
