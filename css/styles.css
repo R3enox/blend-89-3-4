@@ -5,6 +5,7 @@
 --accent-color-yellow: #ffe450;
 --background-color: #fefefe;
 --tertiary-color: #7EB101;
+--transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list {
@@ -68,7 +69,7 @@ body {
     border: 2px solid var(--tertiary-colorcolor);
     border-radius: 30px;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-dur-and-func);
 }
 
 .modal-open-btn:hover,
@@ -82,6 +83,7 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: var(--primary-color);
+    transition: color var(--transition-dur-and-func);
 }
 
 .current-link {
@@ -257,7 +259,7 @@ body {
     background-color: #FFFFFF;
     border: 2px solid var(--tertiary-color);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-dur-and-func);
 }
 
 .offerings-modal-open-btn:hover,
@@ -285,7 +287,7 @@ body {
     border: 15px solid var(--accent-color-yellow);
     border-radius: 197.5px;
     padding: 24px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color var(--transition-dur-and-func);
 }
 
 .our-favorites-item:hover,
@@ -375,6 +377,7 @@ body {
     background-color: var(--background-color);
     border: 0.854167px solid var(--accent-color-yellow);
     border-radius: 30px;
+    transition: border-color var(--transition-dur-and-func);
 }
 
 .offers-form-input:focus {
@@ -398,7 +401,7 @@ body {
     border-radius: 30px;
     font-family: var(--main-font-family);
     background-color: var(--secondary-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-dur-and-func);
 }
 
 .modal-open-btn-sub-green:hover,
@@ -485,6 +488,7 @@ body {
     color: var(--primary-color);
     border: 0.854167px solid rgb(255, 229, 82);
     border-radius: 30px;
+    transition: border-color var(--transition-dur-and-func);
 }
 
 .footer-form-input:focus {
@@ -507,8 +511,7 @@ body {
     border-radius: 30px;
     background-color: #FFFFFF;
     border: 2px solid var(--tertiary-color);
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-dur-and-func);
 }
 
 .modal-open-btn-sub:hover,
@@ -563,6 +566,7 @@ color: var(--secondary-color);}
     border: none;
     border-radius: 50%;
     background-color: var(--background-color);
+    transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
 }
 
 .modal-close-btn:hover,
@@ -615,6 +619,7 @@ color: var(--secondary-color);}
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
     color: var(--primary-color);
+    transition: border-color var(--transition-dur-and-func);
 }
 
 .modal-form-input:focus,
@@ -647,7 +652,8 @@ color: var(--secondary-color);}
     margin-right: 6px;
     border: 1px solid var(--tertiary-color);
     border-radius: 3px;
-    cursor: pointer;  
+    cursor: pointer; 
+    
 }
 
 .modal-form-checkbox:focus + .modal-form-own-checkbox {
@@ -656,6 +662,7 @@ color: var(--secondary-color);}
 
 .modal-form-checkmark-icon {
     opacity: 0;
+    transition: fill var(--transition-dur-and-func), opacity var(--transition-dur-and-func);;
 }
 
 .modal-form-checkbox:checked + .modal-form-own-checkbox .modal-form-checkmark-icon {
@@ -675,6 +682,7 @@ color: var(--secondary-color);}
     background: #FFFFFF;
     border: 2px solid var(--tertiary-color);
     border-radius: 30px;
+    transition: background-color var(--transition-dur-and-func);
 }
 
 .modal-send-btn:focus,
