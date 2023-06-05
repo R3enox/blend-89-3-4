@@ -48,16 +48,51 @@
             </li>
           </ul>
         </nav>
-        <button class="modal-open-btn modal-open-btn-theme-green" type="button" data-modal-open>
+        <button
+          class="modal-open-btn modal-open-btn-theme-green btn-hidden"
+          type="button"
+          data-modal-open
+        >
           Order Now
         </button>
+        <button class="mobile-menu-open-btn js-open-menu" aria-expanded="false">
+          <svg class="mobile-menu-open-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu js-menu-container">
+          <div class="mobile-menu-container">
+            <button class="mobile-menu-close-btn">
+              <svg class="mobile-menu-close-btn-icon js-close-menu" width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="mobile-nav">
+              <ul class="mobile-menu-list list">
+                <li class="mobile-menu-item">
+                  <a href="" class="mobile-menu-link link menu-current-link">Home</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="" class="mobile-menu-link link">About</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="" class="mobile-menu-link link">Service</a>
+                </li>
+                <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Menu</a></li>
+                <li class="mobile-menu-item">
+                  <a href="" class="mobile-menu-link link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
     <!-- /HEADER-->
     <main>
       <!-- FAVORITE-->
-      <section class="favorite">
-        <div class="container container-space-around">
+      <section class="favorite section">
+        <div class="container container-favorite">
           <div class="favorite-container-left-side">
             <h1 class="main-title">Enjoy Your Favorite Food From Anywhere</h1>
             <p class="section-description-favorite">
@@ -68,28 +103,53 @@
             <button class="modal-open-btn" type="button" data-modal-open>Order Now</button>
           </div>
           <div class="favorite-container-right-side">
-            <img
-              class="favorite-img"
-              src="./images/hero/hero-1-1.jpg"
-              alt="dish"
-              width="511"
-              height="511"
-            />
+            <picture>
+              <source
+                srcset="./images/hero/desktop-img.jpg 1x, ./images/hero/desktop-img@2x.jpg 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="./images/hero/tablet-img.jpg 1x, ./images/hero/tablet-img@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img class="favorite-img" src="./images/hero/desktop-img.jpg" alt="dish" />
+            </picture>
           </div>
         </div>
       </section>
       <!-- /FAVORITE-->
       <!-- OFFERINGS-->
       <section class="offerings section">
-        <div class="container container-space-around">
+        <div class="container container-offerings">
           <div class="offerings-container-left-side">
-            <img
-              class="offerings-img-apple"
-              src="./images/offerings/apple.jpg"
-              alt="Apple"
-              width="502"
-              height="502"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/offerings/desktop-img-apple.jpg    1x,
+                  ./images/offerings/desktop-img-apple@2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/offerings/tablet-img-apple.jpg    1x,
+                  ./images/offerings/tablet-img-apple@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/offerings/mobile-img-apple.jpg    1x,
+                  ./images/offerings/mobile-img-apple@2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="offerings-img-apple"
+                src="./images/offerings/mobile-img-apple.jpg"
+                alt="Apple"
+              />
+            </picture>
           </div>
           <div class="offerings-container-right-side">
             <h2 class="title">What’s Special About Our Offerings</h2>
@@ -106,7 +166,7 @@
                   </svg>
                 </div>
                 <h3 class="suptitle">Fasest Delivery</h3>
-                <p class="section-description-offerings-width">
+                <p class="section-description-sec-offerings">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
                   in eros.
                 </p>
@@ -118,15 +178,18 @@
                   </svg>
                 </div>
                 <h3 class="suptitle">Easy To Order</h3>
-                <p class="section-description-offerings-width">
+                <p class="section-description-sec-offerings">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
                   in eros.
                 </p>
               </li>
             </ul>
-            <button class="offerings-modal-open-btn" type="button" data-modal-open>
-              Order Now
-            </button>
+            <div class="offering-btn-link-wrapper">
+              <button class="offerings-modal-open-btn" type="button" data-modal-open>
+                Order Now
+              </button>
+              <a class="offerings-link" href="">Read More ></a>
+            </div>
           </div>
         </div>
       </section>
@@ -135,70 +198,182 @@
       <section class="our-favorites section">
         <div class="container">
           <h2 class="title title-center">Some of Our Favorites</h2>
-          <p class="section-description section-center">
+          <p class="section-description-favorites section-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
           <ul class="our-favorites-list list">
             <li class="our-favorites-item">
-              <img
-                class="our-favorites-img"
-                src="./images/favorite/gamburger.jpg"
-                alt="Gamburger"
-                width="315"
-                height="315"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/favorite/desktop-gamburger.png    1x,
+                    ./images/favorite/desktop-gamburger@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/favorite/tablet-gamburger.png    1x,
+                    ./images/favorite/tablet-gamburger@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/favorite/mobile-gamburger.png    1x,
+                    ./images/favorite/mobile-gamburger@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="our-favorites-img"
+                  src="./images/favorite/mobile-gamburger.png"
+                  alt="Gamburger"
+                />
+              </picture>
             </li>
             <li class="our-favorites-item">
-              <img
-                class="our-favorites-img"
-                src="./images/favorite/Pasta.jpg"
-                alt="Pasta"
-                width="315"
-                height="315"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/favorite/desktop-pasta.png    1x,
+                    ./images/favorite/desktop-pasta@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/favorite/tablet-pasta.png    1x,
+                    ./images/favorite/tablet-pasta@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/favorite/mobile-pasta.png    1x,
+                    ./images/favorite/mobile-pasta@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="our-favorites-img"
+                  src="./images/favorite/mobile-pasta.png"
+                  alt="Pasta"
+                />
+              </picture>
             </li>
             <li class="our-favorites-item">
-              <img
-                class="our-favorites-img"
-                src="./images/favorite/pizza.jpg"
-                alt="Pizza"
-                width="315"
-                height="315"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/favorite/desktop-pizza.png    1x,
+                    ./images/favorite/desktop-pizza@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/favorite/tablet-pizza.png    1x,
+                    ./images/favorite/tablet-pizza@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/favorite/mobile-pizza.png    1x,
+                    ./images/favorite/mobile-pizza@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="our-favorites-img"
+                  src="./images/favorite/mobile-pizza.png"
+                  alt="Pizza"
+                />
+              </picture>
             </li>
             <li class="our-favorites-item">
-              <img
-                class="our-favorites-img"
-                src="./images/favorite/chicken.jpg"
-                alt="Chicken"
-                width="315"
-                height="315"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/favorite/desktop-chicken.png    1x,
+                    ./images/favorite/desktop-chicken@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/favorite/tablet-chicken.png    1x,
+                    ./images/favorite/tablet-chicken@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="our-favorites-img favorites-img-hidden"
+                  src="./images/favorite/mobile-chicken.png"
+                  alt="Chicken"
+                />
+              </picture>
             </li>
             <li class="our-favorites-item">
-              <img
-                class="our-favorites-img"
-                src="./images/favorite/salat.jpg"
-                alt="Salat"
-                width="315"
-                height="315"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/favorite/desktop-salat.png    1x,
+                    ./images/favorite/desktop-salat@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/favorite/tablet-salat.png    1x,
+                    ./images/favorite/tablet-salat@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/favorite/mobile-salat.png    1x,
+                    ./images/favorite/mobile-salat@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="our-favorites-img favorites-img-hidden"
+                  src="./images/favorite/mobile-salat.png"
+                  alt="Salat"
+                />
+              </picture>
             </li>
             <li class="our-favorites-item">
-              <img
-                class="our-favorites-img"
-                src="./images/favorite/borshch.jpg"
-                alt="Borshch"
-                width="315"
-                height="315"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/favorite/desktop-borshch.png    1x,
+                    ./images/favorite/desktop-borshch@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/favorite/tablet-borshch.png    1x,
+                    ./images/favorite/tablet-borshch@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="our-favorites-img favorites-img-hidden"
+                  src="./images/favorite/mobile-borshch.png"
+                  alt="Borshch"
+                />
+              </picture>
             </li>
           </ul>
         </div>
       </section>
       <!-- /OUR-FAVORITES-->
       <!-- CUSTOMERS-->
-      <section class="customers section">
+      <!-- <section class="customers section">
         <div class="container">
           <h2 class="title">What our Customers Say</h2>
           <p class="section-description">
@@ -245,10 +420,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- /CUSTOMERS-->
       <!-- OFFERS-->
-      <section class="offers section-padding">
+      <!-- <section class="offers section-padding">
         <div class="container container-space-around">
           <div class="offers-container-left">
             <h2 class="title offers-title-marginbot">Subscribe To Get Special Offers</h2>
@@ -281,11 +456,11 @@
             />
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- /OFFERS-->
     </main>
     <!-- FOOTER-->
-    <footer class="footer section">
+    <!-- <footer class="footer section">
       <div class="container">
         <div class="footer-big">
           <div class="footer-container-left">
@@ -347,9 +522,9 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
     <!-- /FOOTER-->
-    <div class="backdrop" data-modal>
+    <!-- <div class="backdrop" data-modal>
       <div class="modal">
         <h2 class="modal-title">Order Form</h2>
         <button class="modal-close-btn" type="button" data-modal-close>
@@ -413,8 +588,15 @@
           <button class="modal-send-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
