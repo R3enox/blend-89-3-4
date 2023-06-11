@@ -149,6 +149,11 @@ body {
     fill: var(--tertiary-color);
 }
 
+.mobile-menu-open-btn:hover,
+.mobile-menu-open-btn:focus {
+    fill: var(--accent-color-yellow);
+}
+
 .mobile-menu {
     position: fixed;
     top: 0;
